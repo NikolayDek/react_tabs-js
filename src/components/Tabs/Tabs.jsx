@@ -9,7 +9,7 @@ export const Tabs = ({ tabs, activeTab, onTabSelected }) => {
             <li
               key={tab.id}
               className={classNames({
-                'is-active': tab.title === activeTab.title,
+                'is-active': tab.id === activeTab.id,
               })}
               data-cy="Tab"
             >
